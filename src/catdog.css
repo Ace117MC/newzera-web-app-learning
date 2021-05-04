@@ -1,0 +1,448 @@
+:root {
+
+/* Font/text values */
+--unnamed-font-family-bananagrotesk-light: BananaGrotesk-Light;
+--unnamed-font-family-bananagrotesk-bold: BananaGrotesk-Bold;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-size-14: 14px;
+--unnamed-font-size-16: 16px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-character-spacing--0-11: -0.11px;
+--unnamed-character-spacing--0-09: -0.09px;
+--unnamed-line-spacing-18: 18px;
+--unnamed-line-spacing-27: 27px;
+}
+
+/* Character Styles */
+.bodycopy {
+font-family: var(--unnamed-font-family-bananagrotesk-light);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing--0-11);
+color: var(--unnamed-color-1f1f60);
+}
+.bodycopy-2 {
+font-family: var(--unnamed-font-family-bananagrotesk-light);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-14);
+line-height: var(--unnamed-line-spacing-27);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-8f8faf);
+}
+.link- {
+font-family: var(--unnamed-font-family-bananagrotesk-bold);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-16);
+line-height: var(--unnamed-line-spacing-18);
+letter-spacing: var(--unnamed-character-spacing--0-09);
+color: var(--unnamed-color-7b46e4);
+}
+
+/* .center { */
+    /* align-content: center; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width: 50%; */
+    /* border: 3px solid green; */
+    /* padding: 10px; */
+/* } */
+
+.artboard {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 810px;
+    background: #FDE3D9 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: auto;
+}
+
+.group2 {
+    position: relative;
+    top: 0px;
+    left: 720px;
+    width: 720px;
+    height: 810px;
+    background: transparent url('img/Group 2.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.group {
+    position: relative;
+    top: 0px;
+    left: 720px;
+    width: 720px;
+    height: 810px;
+    background: transparent url('img/Group.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.animate {
+    transition: 350ms ease-in-out;
+}
+
+.catndog {
+    position: absolute;
+    top: 33px;
+    left: 41px;
+    width: 194px;
+    height: 62px;
+    background: transparent url('img/Cat-N-Dog-Logo copy.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.text1 {
+    position: absolute;
+    font-size: 42px;
+    top: 359px;
+    left: 60px;
+    width: 571px;
+    height: 162px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.text2 {
+    position: absolute;
+    top: 542px;
+    left: 60px;
+    width: 440px;
+    height: 108px;
+    letter-spacing: var(--unnamed-character-spacing--0-11);
+    text-align: left;
+    letter-spacing: -0.11px;
+    color: #6D6D6D;
+    opacity: 1;
+}
+
+.apple {
+    position: absolute;
+    top: 706px;
+    left: 60px;
+    width: 160px;
+    height: 53px;
+    background: transparent url('img/AppStoreBadge.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.google {
+    position: absolute;
+    top: 693px;
+    left: 232px;
+    width: 207px;
+    height: 80px;
+    background: transparent url('img/google-play-badge.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.about {
+    position:absolute;
+    top: 48px;
+    left: 1171px;
+    width: 34px;
+    height: 14px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #F7F7F7;
+    opacity: 1;
+}
+
+.blog {
+    position: absolute;
+    top: 48px;
+    left: 1226px;
+    width: 25px;
+    height: 14px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #F7F7F7;
+    opacity: 1;
+}
+
+.careers {
+    position: absolute;
+    top: 48px;
+    left: 1272px;
+    width: 43px;
+    height: 14px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #F7F7F7;
+    opacity: 1;
+}
+
+.contact {
+    position: absolute;
+    top: 48px;
+    left: 1335px;
+    width: 45px;
+    height: 14px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #F7F7F7;
+    opacity: 1;
+}
+
+button {
+    background-color: transparent;
+    width: 45px;
+    height: 14px;
+    border: transparent;
+}
+
+.typetext {
+    position: absolute;
+    top: 501px;
+    left: 831px;
+    width: 80px;
+    height: 20px;
+    text-align: left;
+    letter-spacing: -0.12px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.text3 {
+    position: absolute;
+    top: 544px;
+    left: 830px;
+    width: 220px;
+    height: 81px;
+    letter-spacing: var(--unnamed-character-spacing--0-11);
+    text-align: left;
+    letter-spacing: -0.11px;
+    color: #FFE8DF;
+    opacity: 1;
+}
+
+.nav {
+    position: absolute;
+    top: 642px;
+    left: 830px;
+    width: 25px;
+    height: 8px;
+    opacity: 1;
+}
+
+.option1 {
+    position:absolute;
+    left: 0px;
+}
+
+.option2 {
+    position: absolute;
+    left: 20px;
+}
+
+.opselect {
+    width: 8px;
+    height: 8px;
+    background: #FEE7DE 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.opunselect {
+    top: 1px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #FEE7DE;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.fb {
+    position: absolute;
+    top: 762px;
+    left: 1326px;
+    width: 10px;
+    height: 11px;
+    background: transparent url('img/FB-icon-black.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.linkedin {
+    position: absolute;
+    top: 762px;
+    left: 1348px;
+    width: 11px;
+    height: 11px;
+    background: transparent url('img/linkedin-icon-black.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.twitter {
+    position: absolute;
+    top: 762px;
+    left: 1370px;
+    width: 11px;
+    height: 11px;
+    background: transparent url('img/Twitter-icon-black.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.popupfilter {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 810px;
+    background: transparent url('img/Filter.svg') 0% 0% no-repeat padding-box;
+    /* opacity: 0.6; */
+    margin: auto;
+}
+
+.popup {
+    position: absolute;
+    top: 203px;
+    left: 473px;
+    width: 495px;
+    height: 405px;
+    background: #FCEBE5 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+}
+
+.contact2 {
+    position: absolute;
+    /* top: 254px;
+    left: 511px; */
+    top: 51px;
+    left: 38px;
+    width: 419px;
+    height: 45px;
+    /* font: var(--unnamed-font-style-normal) normal bold 42px/47px Banana Grotesk; */
+    text-align: left;
+    font: normal normal bold 42px/47px Banana Grotesk;
+    letter-spacing: 2.1px;
+    color: #495057;
+    /* opacity: 1; */
+}
+
+.poptext {
+    position: absolute;
+    /* top: 300px;
+    left: 511px; */
+    top: 97px;
+    left: 38px;
+    width: 284px;
+    height: 14px;
+    font: var(--unnamed-font-style-normal) normal 300 12px/38px Banana Grotesk;
+    text-align: left;
+    font: normal normal 300 12px/38px Banana Grotesk;
+    letter-spacing: 0.48px;
+    color: #ADB5BD;
+    opacity: 1;
+}
+
+.popinputbox {
+    position: absolute;
+    left: 36px;
+    width: 420px;
+    height: 45px;
+    background: #F8F9FA 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    /* opacity: 1; */
+}
+
+.popinputlabel {
+    position: absolute;
+    left: 30px;
+    top: 4px;
+    height: 14px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px/38px Banana Grotesk;
+    text-align: left;
+    font: normal normal normal 12px/38px Banana Grotesk;
+    letter-spacing: 0.48px;
+    color: #495057;
+    /* opacity: 1; */
+}
+
+.popinput {
+    position: absolute;
+    top: 13px;
+    left: 129px;
+    width: 240px;
+    height: 14px;
+    font: var(--unnamed-font-style-normal) normal 300 12px/38px Banana Grotesk;
+    text-align: left;
+    font: normal normal 300 12px/38px Banana Grotesk;
+    letter-spacing: 0.48px;
+    color: #ADB5BD;
+    background: transparent;
+    border: transparent;
+    /* opacity: 1; */
+}
+
+.popbutton {
+    position: absolute;
+    top: 307px;
+    left: 351px;
+    width: 105px;
+    height: 45px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 39px;
+    opacity: 1;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px/38px Banana Grotesk;
+    text-align: center;
+    font: normal normal normal 12px/38px Banana Grotesk;
+    letter-spacing: 0.48px;
+    color: #FFFFFF;
+}
+
+.poptext2 {
+    position: absolute;
+    top: 360px;
+    left: 36px;
+    width: 218px;
+    height: 14px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 12px/38px Banana Grotesk;
+    text-align: left;
+    font: normal normal normal 12px/38px Banana Grotesk;
+    letter-spacing: 0.48px;
+    color: #495057;
+    opacity: 1;
+}
+
+.popfb {
+    position: absolute;
+    top: 364px;
+    left: 401px;
+    width: 11px;
+    height: 11px;
+    background: transparent url('img/FB-icon-black.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.poplinkedin {
+    position: absolute;
+    top: 364px;
+    left: 423px;
+    width: 11px;
+    height: 11px;
+    background: transparent url('img/linkedin-icon-black.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.poptwitter {
+    position: absolute;
+    top: 364px;
+    left: 445px;
+    width: 11px;
+    height: 11px;
+    background: transparent url('img/Twitter-icon-black.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
