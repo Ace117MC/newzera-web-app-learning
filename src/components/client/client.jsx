@@ -1,9 +1,58 @@
-import React,{useState} from 'react'
-// import {SendMessage} from '../client/client';
+import { 
+    ApolloClient,
+    InMemoryCache,
+    gql,
+    useQuery,
+    useMutation,
+} from '@apollo/client';
+import React,{ useState } from 'react';
 
+const client = new ApolloClient({
+    uri: 'http://localhost:4000',
+    cache: new InMemoryCache()
+});
 
+const GET_DATA = gql`
+    query GetData {
+        texts {
+            id
+            info
+        }
+    }
+`;
 
-const Popup = (props) => {
+const ADD_MSG = gql`
+    mutation SendMessage($name: String!, $email: String!, $msg: String!) {
+        addMsg(name: $name, email: $email, msg: $msg) {
+            id
+            name
+            email
+            msg
+        }
+    }
+`;
+
+function GetData(args) {
+    const {loading, error, data} = useQuery(GET_DATA);
+    // console.log(data);
+
+    if(loading) return "Loading...";
+    if(error) return `Error! ${error.message}`;
+
+    return data.texts[args.id].info;
+}
+
+// function SendMessage(args) {
+//     const [addMsg, {data}] = useMutation(ADD_MSG);
+
+//     // console.log(args);
+//     return addMsg({variables: {name: args.name.toString(),email: args.email.toString(),msg: args.msg.toString()} });
+
+//     // return args;
+// }
+
+const SendMessage = (props) => {
+    const [addMsg, {data}] = useMutation(ADD_MSG);
     const [nm, setNm] = useState('');
     const [ml, setMl] = useState('');
     const [ms, setMs] = useState('');
@@ -20,6 +69,8 @@ const Popup = (props) => {
                 </div>
                 <form onSubmit={(e) => {
                     e.preventDefault();
+                    addMsg({variables: {name: nm.toString(),email: ml.toString(),msg: ms.toString()} });
+                    props.handleClose();
                 }}>
                     <div className="popinputbox" style={{top:'136px'}}>
                         <label for="name" className="popinputlabel">Name</label>
@@ -52,4 +103,4 @@ const Popup = (props) => {
     );
 }
 
-export default Popup
+export {client, GetData, SendMessage};

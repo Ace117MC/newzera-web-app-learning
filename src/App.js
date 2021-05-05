@@ -2,7 +2,8 @@
 // import './App.css';
 import { useState } from 'react';
 import './catdog.css';
-import Popup from './components/popup/popup';
+// import Popup from './components/popup/popup';
+import {GetData,SendMessage} from './components/client/client';
 
 // function App() {
 //   return (
@@ -37,10 +38,12 @@ function App() {
     <div className="artboard">
       <div className="catndog"></div>
       <div className="text1">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. */}
+        {GetData({id:0})}
       </div>
       <div className="text2">
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        {GetData({id:1})}
+        {/* Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. */}
       </div>
       <div className="apple"></div>
       <div className="google"></div>
@@ -58,7 +61,8 @@ function App() {
       <button className="contact" onClick={togglePopup}>Contact</button>
       <div className="typetext">Type Text</div>
       <div className="text3">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        {/* Lorem Ipsum is simply dummy text of the printing and typesetting industry. */}
+        {GetData({id:0})}
       </div>
       {
         state===1? (
@@ -91,7 +95,8 @@ function App() {
       <a href="https://www.linkedin.com/company/newzera/" className="linkedin"></a>
       <a href="https://twitter.com/newzeraapp" className="twitter"></a>
       {
-        pop && <Popup handleClose={togglePopup} />
+        // pop && <Popup handleClose={togglePopup} />
+        pop && <SendMessage handleClose={togglePopup} />
       }
     </div>
     
