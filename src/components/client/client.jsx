@@ -96,7 +96,7 @@ const SendMessage = (props) => {
                             setMs(e.target.value);
                         }} />
                     </div>
-                    <button type="submit" onClick={props.handleSubmit} className="popbutton" value="">Submit</button>
+                    <button type="submit" id="submit" onClick={props.handleSubmit} className="popbutton" value="">Submit</button>
                     <div className="poptext2">
                         Need more info? hello@newzera.com
                     </div>
