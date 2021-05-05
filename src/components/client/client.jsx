@@ -6,6 +6,7 @@ import {
     useMutation,
 } from '@apollo/client';
 import React,{ useState } from 'react';
+import {checkmail} from '../check/check';
 
 const client = new ApolloClient({
     uri: 'http://localhost:4000',
@@ -69,8 +70,13 @@ const SendMessage = (props) => {
                 </div>
                 <form onSubmit={(e) => {
                     e.preventDefault();
-                    addMsg({variables: {name: nm.toString(),email: ml.toString(),msg: ms.toString()} });
-                    props.handleClose();
+                    if(checkmail(ml)) {
+                        addMsg({variables: {name: nm.toString(),email: ml.toString(),msg: ms.toString()} });
+                        props.handleClose();
+                    }
+                    else {
+                        alert("Enter correct email");
+                    }
                 }}>
                     <div className="popinputbox" style={{top:'136px'}}>
                         <label for="name" className="popinputlabel">Name</label>
