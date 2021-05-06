@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +67,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+
+
+# Learning Project - Web-App with API Integration
+
+### Web-App
+
+1. It is a react project so you need to start it by using the command - "npm start"
+
+2. The Backend Server is setup using Apollo Server which can be started using - "node server.js" (in separate terminal)
+
+![Alt text](./1.png?raw=true "Web Page")
+![Alt text](./2.png?raw=true "Web Page")
+![Alt text](./3.png?raw=true "Web Page")
+
+
+### API
+
+1. API integration is done using Apollo & GraphQL
+
+2. Data can be seen on GraphQL Playground on specified address ("http://localhost:4000" in this case)
+
+3. Testing for App is done using Jest & Enzyme. To start test use command - "npm test"
+
+![Alt text](./4.png?raw=true "GraphQL Playground")
